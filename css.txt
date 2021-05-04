@@ -1,0 +1,136 @@
+
+body {
+	background-color:white;
+}
+
+nav{
+	z-index:3;
+	margin-top:19px;
+	height:auto;
+	background-color:transparent;
+	transition:none;
+	width:auto;
+	float:right;
+	right:12px;
+	visibility:visible;
+	font-family:'Roboto Slab', serif;
+	overflow:inherit;
+}
+
+.active{
+	background-color: orange;
+	color:#FF6759 /* primary super-lightcolor*/;
+	position: relative;
+	top: -15px;
+	left: 0px;
+}
+	
+.active-dropdown{
+	color:yellow;
+	background-color:#B3453E/* primary lightcolor*/;
+}
+
+nav ul{
+	padding:0;
+}
+	
+nav ul li a {
+	padding:0;
+	display:inline;
+	font-size:16px;
+	color: #fff;
+}
+
+nav ul li a:hover {
+	background-color:transparent;
+	color:#FF6759 /* primary super-lightcolor*/;
+}
+	
+.submenu{
+	padding-left: 0;
+	color:yellow;
+}
+
+nav ul li {	
+	margin:0;
+	float:left;
+	position:relative;
+	padding:0 16px;
+}
+
+.submenu::after{
+	content: url(img/arrow-down.svg);
+	float: right;
+	padding-left: 6px;
+}
+
+	
+	
+nav ul li ul { 
+	position:fixed;
+	height:0;
+	overflow:hidden;
+	background-color: #A24038 /* primary color*/
+}
+	
+nav ul li:hover ul{
+	height:auto;
+	padding-top: 14px;
+	position: absolute;
+	right: 0;	
+}
+
+nav ul li ul li {
+	font-size: 14px;
+	font-weight: normal;
+	float:none;
+	padding:0;
+	min-width: 160px;
+	border-top: 1px solid #B3453E/* primary lightcolor*/;
+}
+
+nav ul li ul li a {
+	padding: 16px 32px;
+	display: block;
+	background-color: #A24038/* primary color*/;
+	color: #ffffff;
+	font-weight: normal;
+}
+
+nav ul li ul li a:hover {
+	background-color:#B3453E/* primary lightcolor*/;
+	color:#FF6759 /* primary super-lightcolor*/;
+}
+
+
+.submenu::after{
+	content: url(img/arrow-down.svg);
+	float: right;
+	padding-left: 6px;
+}
+
+h1 {
+	background-color: gray;
+	margin-bottom: 38px;
+}
+
+h2 {
+	text-align: center;
+	position: relative;
+}
+
+h3 {
+	text-align: center;
+	position: relative;
+	height: 10px;
+}
+
+#p1 {
+	background-color: Grey;
+	width: 1270px;
+	height: 360px;
+	margin-bottom: 0px;
+    float: left;
+	padding: 40px;
+	font-size: 16pt;
+}
